@@ -9,7 +9,7 @@ namespace Umfg.Programacaoiv2023.Primeira.Api
         public Guid Id { get; private set; }
 
         [JsonPropertyName("nome")]
-        public string Nome { get; private set; }
+        public string Nome { get; set; }
 
         private Cliente() { }
 

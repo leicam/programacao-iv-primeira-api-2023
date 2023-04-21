@@ -1,17 +1,17 @@
 {
 	"info": {
-		"_postman_id": "b694fe3f-7b16-4790-b0d2-4c3430fad2bf",
+		"_postman_id": "dedb5b47-f341-440a-99c2-ce4a235c0886",
 		"name": "programacao-iv-primeira-api-2023",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "https://localhost:44305/api/v1/Cliente/8c5cd380-5c54-4ccd-842b-a42dd6f8404a",
+			"name": "Obter cliente por id",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44305/api/v1/Cliente/8c5cd380-5c54-4ccd-842b-a42dd6f8404a",
+					"raw": "https://localhost:44305/api/v1/cliente/45cb3f33-efbc-4718-9119-0e014ec61a15",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -20,20 +20,20 @@
 					"path": [
 						"api",
 						"v1",
-						"Cliente",
-						"8c5cd380-5c54-4ccd-842b-a42dd6f8404a"
+						"cliente",
+						"45cb3f33-efbc-4718-9119-0e014ec61a15"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "https://localhost:44305/api/v1/Cliente",
+			"name": "Obter todos clientes",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44305/api/v1/Cliente",
+					"raw": "https://localhost:44305/api/v1/cliente",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -42,7 +42,111 @@
 					"path": [
 						"api",
 						"v1",
-						"Cliente"
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Teste Post API\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44305/api/v1/cliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Atualizacao Teste Post API\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44305/api/v1/cliente/ceb97ff6-25d5-4500-97dd-bd3b69e3a11e",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"cliente",
+						"ceb97ff6-25d5-4500-97dd-bd3b69e3a11e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover todos clientes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/v1/cliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/v1/cliente/86ba9473-f38f-4f81-813c-dc76a3807485",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"cliente",
+						"86ba9473-f38f-4f81-813c-dc76a3807485"
 					]
 				}
 			},
